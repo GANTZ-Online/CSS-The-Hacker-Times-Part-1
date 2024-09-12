@@ -1,0 +1,118 @@
+// SCSS Variables
+$font-primary: 'Source Sans Pro', sans-serif;
+$font-secondary: 'Roboto Slab', serif;
+$font-tertiary: 'Abril Fatface', cursive;
+$color-light: #eee;
+$color-dark: #191919;
+$color-text: #777;
+$color-red: rgb(36, 180, 208);
+$border-radius: 15px;
+$padding: 10px;
+$margin: 20px;
+$sticky-position: sticky;
+$top-position: 0;
+$z-index-high: 1000;
+
+// Base styles
+body {
+  padding: 3dvh;
+  margin: $margin;
+}
+
+// Navigation styles
+nav {
+  list-style: none;
+  margin-bottom: 10px;
+  color: #fff;
+  width: 100%;
+  position: $sticky-position;
+  top: $top-position;
+  background-color: $color-light;
+  margin: 0 auto;
+
+  li {
+    padding: 5px;
+    list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    position: $sticky-position;
+    top: $top-position;
+    z-index: $z-index-high;
+
+    a {
+      text-decoration: none;
+      color: $color-text;
+
+      &:hover {
+        color: #fff;
+        background-color: $color-dark;
+      }
+    }
+  }
+}
+
+// General styles
+ul {
+  padding: 0;
+}
+
+.newspaper-container {
+  padding: $padding;
+  margin: 0 auto;
+  width: 800px;
+  border-radius: $border-radius;
+  border-color: $color-light;
+  background-color: $color-light;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-family: $font-secondary;
+}
+
+h5 {
+  color: $color-red;
+}
+
+.more-articles {
+  section {
+    display: inline-block;
+    width: 44%;
+    margin: 0 15px;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.date {
+  font-weight: normal; // If you want to use bold or 900, you should choose one
+}
+
+header {
+  font-family: $font-tertiary;
+}
+
+// Hero component styles (example)
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path-to-your-hero-image.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: $padding;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-top: 0;
+  }
+}
+
